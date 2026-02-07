@@ -14,6 +14,23 @@ def add_books():
     else:
         print("book not found")
 
+        def return_book():
+           book = input("Enter book name you want to return")
+           library.append(book)
+           print(f"{book} has beem returned")
+
+           def view_book():
+              if not library:
+                 print("no books are presentin library")
+
+              else:
+                 print("List of books")
+                 idx = 1
+                 for book in library:
+                    print(f"{idx}. {book}")
+                    idx +=1
+
+                    print()
     
 
 
